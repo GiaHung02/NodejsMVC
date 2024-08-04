@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Tour</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1>Create a New Tour</h1>
+      <form action="/submitTour" method="POST">
+        <div class="form-group">
+          <label for="name">Tour Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            name="name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="duration">Duration (days)</label>
+          <input
+            type="number"
+            class="form-control"
+            id="duration"
+            name="duration"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="difficulty">Difficulty</label>
+          <select
+            class="form-control"
+            id="difficulty"
+            name="difficulty"
+            required
+          >
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="price">Price ($)</label>
+          <input
+            type="number"
+            class="form-control"
+            id="price"
+            name="price"
+            required
+          />
+        </div>
+        <button type="submit" class="btn btn-primary">Create Tour</button>
+      </form>
+    </div>
+  </body>
+</html>
